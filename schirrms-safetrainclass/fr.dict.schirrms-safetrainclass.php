@@ -15,7 +15,7 @@
   'Class:SafeTrain/Attribute:s_train+' => 'DOIT être une étiquette valide !',
   'Class:SafeTrain/Attribute:org_id' => 'Code de l\'organisation',
   'Class:SafeTrain/Attribute:org_name' => 'Nom de l\'organisation',
-	'Class:SafeTrain/Attribute:TrainsCIs' => 'CIs de ce train',
+	'Class:SafeTrain/Attribute:TrainCIs' => 'CIs de ce train',
 	'Class:SafeTrain/Attribute:VMObsolescencedashboard' => 'Obsolescence des OS des Machines Virtuelles',
 ));
 ?>
