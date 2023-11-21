@@ -48,11 +48,43 @@
 					<extkey_attcode>org_id</extkey_attcode>
 					<target_attcode>name</target_attcode>
 				</field>
+				<field id="TrainCIs" xsi:type="AttributeDashboard">
+					<is_user_editable>false</is_user_editable>
+					<definition>
+						<layout>DashboardLayoutOneCol</layout>
+						<title>Listes de CIs affectés à ce train</title>
+						<auto_reload>
+							<enabled>false</enabled>
+							<interval>300</interval>
+						</auto_reload>
+						<cells>
+							<cell id="0">
+								<rank>0</rank>
+								<dashlets>
+									<dashlet id="CUSTOM_SafeTrain__VMObsolescencedashboard_ID_row3_col0_17" xsi:type="DashletObjectList">
+										<rank>0</rank>
+										<title>Listes des CI du train</title>
+										<query>SELECT FunctionalCI WHERE s_train MATCHES :this-&gt;s_train</query>
+										<menu>true</menu>
+									</dashlet>
+								</dashlets>
+							</cell>
+							<cell id="1">
+								<rank>1</rank>
+								<dashlets>
+									<dashlet id="0" xsi:type="DashletEmptyCell">
+										<rank>0</rank>
+									</dashlet>
+								</dashlets>
+							</cell>
+						</cells>
+					</definition>
+				</field>
 				<field id="VMObsolescencedashboard" xsi:type="AttributeDashboard">
 					<is_user_editable>false</is_user_editable>
 					<definition>
 						<layout>DashboardLayoutThreeCols</layout>
-						<title>Etat d'obolescence OS du parc de Machines Virtuelles pour :this-&gt;name</title>
+						<title>Etat d'obolescence OS du parc de Machines Virtuelles pour ce train</title>
 						<auto_reload>
 							<enabled>false</enabled>
 							<interval>300</interval>
@@ -370,8 +402,11 @@
 						<item id="s_train">
 							<rank>30</rank>
 						</item>
-						<item id="VMObsolescencedashboard">
+						<item id="TrainCIs">
 							<rank>100</rank>
+						</item>
+						<item id="VMObsolescencedashboard">
+							<rank>110</rank>
 						</item>
 					</items>
 				</details>

@@ -15,6 +15,7 @@ Dict::Add('EN US', 'English', 'English', array(
 	'Class:SafeTrain/Attribute:s_train+' => 'MUST be a valid tag code!',
 	'Class:SafeTrain/Attribute:org_id' => 'Organization ID',
 	'Class:SafeTrain/Attribute:org_name' => 'Organization name',
+	'Class:SafeTrain/Attribute:TrainsCIs' => 'CIs of this train',
 	'Class:SafeTrain/Attribute:VMObsolescencedashboard' => 'Virtual Machines OS obsolescence',
 ));
 ?>
